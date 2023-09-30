@@ -7,6 +7,7 @@ import 'package:shop_apps/core/presentions/find/find_page.dart';
 import 'package:shop_apps/core/presentions/product/product_screen.dart';
 import 'package:shop_apps/core/api/api_data.dart';
 
+//test Apps
 class ContollerApps extends GetxController {
   int currentIndex = 0;
   var product = <ProductModels>[].obs;
