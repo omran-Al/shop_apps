@@ -72,7 +72,7 @@ class _FindPageState extends State<FindPage> {
                   return Obx(
                     () {
                       if (controller.product.isEmpty) {
-                        return const CircularProgressIndicator();
+                        return const Center(child: CircularProgressIndicator());
                       } else {
                         return _itemsProduct(index);
                       }
@@ -132,19 +132,5 @@ class _FindPageState extends State<FindPage> {
         ],
       ),
     );
-  }
-
-  List<Color> colors = [
-    Colors.red.withOpacity(.5),
-    Colors.green.withOpacity(.5),
-    Colors.blue.withOpacity(.5),
-    Colors.yellow.withOpacity(.5),
-    Colors.orange.withOpacity(.5),
-  ];
-
-  int getNumber() {
-    final random = Random();
-    int randomInt = random.nextInt(5);
-    return randomInt;
   }
 }
